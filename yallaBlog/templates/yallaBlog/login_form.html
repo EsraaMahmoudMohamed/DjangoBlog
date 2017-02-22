@@ -1,0 +1,19 @@
+{%  extends 'yallaBlog/base.html' %}
+{% block main_block %}
+
+
+
+
+<form method='POST'> {% csrf_token %}
+   {{log_form.as_p}}
+   
+
+	<center>
+<button  type="sumbit" class="myButton" > sgin in  </button>
+</center>
+
+
+</form>
+
+
+{% endblock %}
